@@ -10,7 +10,7 @@ import {Button} from "@/components/ui/button";
 import DashboardBarChart from "./bashboard-bar-chart";
 export default function StatisticBox() {
   return (
-    <Card>
+    <Card className="flex-1">
       <CardHeader>
         <CardTitle className="text-2xl font-bold">100</CardTitle>
         <CardDescription className="text-sm text-muted-foreground">

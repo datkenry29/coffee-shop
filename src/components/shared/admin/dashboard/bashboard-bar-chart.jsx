@@ -12,7 +12,7 @@ const chartConfig = {
 
 export default function DashboardBarChart() {
   return (
-    <ChartContainer config={chartConfig} className="w-full h-40">
+    <ChartContainer config={chartConfig} className="w-full h-16">
       <BarChart accessibilityLayer data={salesChartData}>
         <Bar dataKey="value" />
       </BarChart>

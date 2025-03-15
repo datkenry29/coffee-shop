@@ -11,7 +11,6 @@ export default function AppBreadcrumb({breadcrumItems}) {
   const matchBreadcrumbs = breadcrumItems.filter((item) => {
     return pathname.startsWith(item.route);
   });
-  console.log(matchBreadcrumbs);
   return (
     <Breadcrumb>
       <BreadcrumbList>

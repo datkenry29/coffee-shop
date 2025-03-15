@@ -25,14 +25,10 @@ export default function AdminSidebar() {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <div
-              className={`flex items-center justify-between transition-all duration-300 ease-linear ${
-                open ? "translate-x-0" : "-translate-x-[108px]"
-              }`}
-            >
+            <div className={`flex items-center h-16 justify-end`}>
               <div
-                className={`flex items-center gap-4 duration-100 ${
-                  open ? "visible" : "invisible"
+                className={`flex items-center gap-4 duration-100 absolute left-0  ${
+                  open ? " visible" : " invisible"
                 }`}
               >
                 <img
