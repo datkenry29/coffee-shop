@@ -34,3 +34,46 @@ export const salesChartData = [
 export const customerChartsData = {};
 
 export const ordersChartData = {};
+
+export const bestSellingProducts = [
+  {
+    name: "Roasted Coffee Blend (Arabica + Robusta)",
+    value: 940,
+    fill: "#4078FF",
+  },
+  {name: "Roasted Arabica Coffee Beans", value: 740, fill: "#A8B2FF"},
+  {name: "Aluminum Phin Coffee Filter", value: 790, fill: "#728FFF"},
+];
+
+export const recentOrders = [
+  {
+    item: "Arabica Special Blend",
+    date: "2025-03-14",
+    total: 35.0,
+    status: "Processing",
+  },
+  {
+    item: "Robusta Dark Roast",
+    date: "2025-03-12",
+    total: 28.0,
+    status: "Processing",
+  },
+  {
+    item: "Espresso Classic",
+    date: "2025-03-08",
+    total: 42.0,
+    status: "Completed",
+  },
+  {
+    item: "Vietnamese Drip Coffee",
+    date: "2025-03-05",
+    total: 30.0,
+    status: "Completed",
+  },
+  {
+    item: "Cold Brew Signature",
+    date: "2025-03-03",
+    total: 25.0,
+    status: "Completed",
+  },
+];

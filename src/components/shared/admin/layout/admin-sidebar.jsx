@@ -14,11 +14,11 @@ import {
 import Link from "next/link";
 import SidebarTriggerButton from "../../common/sidebar-trigger-button";
 import {sidebarItems} from "@/lib/data";
+import {usePathname} from "next/navigation";
 
 export default function AdminSidebar() {
   const {open} = useSidebar();
-
-  const selectMenu = (sidebarItem) => {};
+  const pathname = usePathname();
 
   return (
     <Sidebar variant="floating" collapsible="icon">
@@ -27,8 +27,8 @@ export default function AdminSidebar() {
           <SidebarMenuItem>
             <div className={`flex items-center h-16 justify-end`}>
               <div
-                className={`flex items-center gap-4 duration-100 absolute left-0  ${
-                  open ? " visible" : " invisible"
+                className={`flex items-center gap-4 duration-300 absolute left-0 ease-in-out transform ${
+                  open ? " visible opacity-100" : " invisible opacity-0"
                 }`}
               >
                 <img
@@ -52,7 +52,14 @@ export default function AdminSidebar() {
               {sidebarItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <Link href={item.url} onClick={() => selectMenu(item)}>
+                    <Link
+                      href={item.url}
+                      className={
+                        item.url.startsWith(pathname)
+                          ? "bg-gray-200 text-amber-800"
+                          : ""
+                      }
+                    >
                       <item.icon />
                       <span>{item.title}</span>
                     </Link>

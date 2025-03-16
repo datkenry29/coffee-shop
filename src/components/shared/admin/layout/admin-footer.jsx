@@ -2,8 +2,8 @@ import {Separator} from "@/components/ui/separator";
 
 export default function AdminFooter() {
   return (
-    <footer className="p-4 text-center text-sm text-muted-foreground">
-      <Separator className=" mb-4 text-black" />
+    <footer className="p-2 text-center text-sm text-muted-foreground">
+      <Separator className=" mb-2 text-black" />
       <div className="flex justify-center items-center gap-2">
         <img
           src="/images/admin/footer-logo.svg"

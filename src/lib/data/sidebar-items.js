@@ -5,6 +5,7 @@ import {
   Settings,
   Archive,
   Star,
+  Warehouse,
 } from "lucide-react";
 
 export const sidebarItems = [
@@ -18,6 +19,7 @@ export const sidebarItems = [
     icon: Archive,
     url: "/admin/product",
   },
+  {title: "Inventory", icon: Warehouse, url: "/admin/inventory"},
   {
     title: "Orders",
     icon: ShoppingCart,

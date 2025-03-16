@@ -9,7 +9,7 @@ export default function AdminLayout({children}) {
       <AdminSidebar />
       <div className="flex flex-col flex-1">
         <AdminHeader />
-        <main className="flex-1 p-4">{children}</main>
+        <main className="flex-1 px-4">{children}</main>
         <AdminFooter />
       </div>
     </SidebarProvider>
